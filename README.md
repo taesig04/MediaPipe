@@ -1,14 +1,12 @@
-# generate_readme.py
 
-readme_content = """\
-# 🖐️ MediaPipe Hand Detector
+#  MediaPipe Hand Detector
 
 이 프로젝트는 **MediaPipe**와 **OpenCV**를 사용하여 **실시간 손 감지 및 랜드마크 추적**을 수행합니다.  
 카메라 또는 동영상 파일을 입력으로 받아 손의 주요 관절 위치를 감지하고 화면에 시각적으로 표시합니다.
 
 ---
 
-## 📦 주요 기능
+##  주요 기능
 
 - 양손(최대 2개)까지 실시간 감지 가능
 - 손가락 관절(21개 랜드마크) 시각화
@@ -17,14 +15,11 @@ readme_content = """\
 
 ---
 
-## 🛠️ 설치 방법
+ 🛠️ 설치 방법
 
-1. Python 3.7 이상이 필요합니다.
+1. Python 3.12가 필요합니다.
 2. 필요한 라이브러리를 설치하세요:
 
-\`\`\`bash
-pip install opencv-python mediapipe
-\`\`\`
 
 ---
 
@@ -41,17 +36,17 @@ python hand_tracker.py
 cap = cv2.VideoCapture("hand.mp4")  # 'hand.mp4'는 손이 등장하는 동영상 파일
 \`\`\`
 
-### 📷 웹캠으로 실행
+###  웹캠으로 실행
 
 \`\`\`python
 cap = cv2.VideoCapture(0)  # 웹캠으로 전환하려면 이 줄을 사용
 \`\`\`
 
-> 🔁 ESC 키를 누르면 프로그램이 종료됩니다.
+>  ESC 키를 누르면 프로그램이 종료됩니다.
 
 ---
 
-## 📁 파일 구조
+##  파일 구조
 
 \`\`\`
 hand_tracker.py     # 손 감지 및 시각화 메인 코드
